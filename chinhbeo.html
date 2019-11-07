@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide();
+                $("h1").hide();
+                $("#chinh").hide();
+                $("#ChinhBeo1").hide();
+            });
+            $("#show").click(function () {
+                $("p").show();
+                $("h1").show();
+                $("#chinh").show();
+                $("#ChinhBeo1").show();
+            });
+            $("#ChinhBeo").click(function () {
+                $("#ChinhBeo1").animate({left:'100px'},"slow");
+                $("#ChinhBeo1").animate({fontSize:'100px'},"slow")
+            });
+
+        });
+    </script>
+</head>
+<body>
+<p>If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<p>Nguyen Dong Chinh</p>
+<h1>Hieu ngu gat</h1>
+<div id="chinh">
+    <p>Thanh xike</p>
+    <h1> Con Cho Linh</h1>
+</div>
+<button id="ChinhBeo">Start Animation</button>
+<div id="ChinhBeo1" style="background: blue;height: 100px;width: 200px;position: absolute">CHINH BEO</div>
+</body>
+</html>
